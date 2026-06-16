@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="hero" id="home">
+    <div class="hero-content">
+        <h1>Hi. <span class="welcome-text">Welcome</span></h1>
+        <h3>I'm Citra Salsabila,</h3>
+        <p>Data Science Student | Django Developer | Big Data Analisa</p>
+        <p class="hero-subtext">
+            Membangun fungsionalitas, mengekstrak wawasan dari data, dan menciptakan pengalaman pengguna yang estetik melalui kode yang bersih.
+        </p>
+    </div>
+
+    <div class="hero-slider-wrapper">
+        <div class="hero-slider-container">
+            <div class="hero-slider" id="sliderTrack">
+                <div class="slide"><img src="{% static 'image/foto1.jpeg' %}" alt="Citra 1"></div>
+                <div class="slide"><img src="{% static 'image/foto2.jpeg' %}" alt="Citra 2"></div>
+                <div class="slide"><img src="{% static 'image/foto3.jpeg' %}" alt="Citra 3"></div>
+                <div class="slide"><img src="{% static 'image/foto4.jpeg' %}" alt="Citra 4"></div>
+                <div class="slide"><img src="{% static 'image/foto5.jpeg' %}" alt="Citra 5"></div>
+                <div class="slide"><img src="{% static 'image/foto6.jpeg' %}" alt="Citra 6"></div>
+                <div class="slide"><img src="{% static 'image/foto7.jpeg' %}" alt="Citra 7"></div>
+            </div>
+        </div>
+        <div class="slider-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    </div>
+</div>
+{% include "about/about.html" %}
+{% include "project/project.html" %}
+
+<script src="{% static 'js/slider.js' %}"></script>
+
+{% endblock %}

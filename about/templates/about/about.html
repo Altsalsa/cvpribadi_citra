@@ -1,0 +1,53 @@
+{% load static %}
+<section id="about" class="section-bg-maroon">
+    <h2 class="section-title text-white-border">About Me</h2> 
+    
+    <div class="about-container">
+        <div class="about-card-combined">
+            
+            <div class="about-img-inline">
+                <img src="{% static 'image/citra.jpeg' %}" alt="Profile Photo">
+            </div>
+            
+            <div class="about-content-inline">
+                <h3>Tentang Saya</h3>
+                <p>Halo! Saya adalah seorang mahasiswa Sains Data yang berfokus dari analisis hingga produksi. Terbiasa mengolah data dengan Python/SQL, riset statistik via SPSS, dan berkolaborasi secara rapi melalui GitHub.</p>
+                
+                <table class="about-table">
+                    <tr>
+                        <td>Nama:</td>
+                        <td>Citra Salsabila Hairunisyah</td>
+                    </tr>
+                    <tr>
+                        <td>Umur:</td>
+                        <td>20 Tahun</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>citrasalsa621@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Pendidikan:</td>
+                        <td>S1 Data Science</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat:</td>
+                        <td>Kabupaten Semarang, Jawa Tengah</td>
+                    </tr>
+                </table>
+
+                <div class="about-action-buttons">
+                    <a href="https://www.linkedin.com/in/citra-salsabila-638686384" target="_blank" class="btn-about btn-linkedin">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="{% static 'pdf/cv-citra.pdf' %}" target="_blank" class="btn-about btn-cv">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        Download CV</a>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</section>
